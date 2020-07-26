@@ -4701,7 +4701,7 @@ ParticleSystem:
 --- !u!199 &3118995432849404933
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4827,6 +4827,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 99.99997
       objectReference: {fileID: 0}
+    - target: {fileID: 2300004, guid: b5610ff0bbbbe3749a471e9c85a97444, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100002, guid: 56b50f0628325a142a447096d250dce0, type: 3}
+    - target: {fileID: 2300004, guid: b5610ff0bbbbe3749a471e9c85a97444, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: bb846039549dd374485f4ccbede2ad8f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5610ff0bbbbe3749a471e9c85a97444, type: 3}
 --- !u!1 &3118995432633637272 stripped
@@ -4908,6 +4916,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: caef6e72a31421d409c93e4c73eead58, type: 2}
+    - target: {fileID: 2300004, guid: b5610ff0bbbbe3749a471e9c85a97444, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8cd4b879b4ac77b41ac18df71732f37c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5610ff0bbbbe3749a471e9c85a97444, type: 3}
 --- !u!1 &3118995433664155214 stripped
