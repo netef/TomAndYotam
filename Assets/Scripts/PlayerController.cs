@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isKnocking && !stopMove)
+        if (!isKnocking && !stopMove)
         {
             float yStore = moveDirection.y;
             //moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if(isKnocking)
+        if (isKnocking)
         {
             knockbackCounter -= Time.deltaTime;
 
@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(stopMove)
+        if (stopMove)
         {
             moveDirection = Vector3.zero;
             moveDirection.y += Physics.gravity.y * Time.deltaTime * gravityScale;
@@ -130,4 +130,6 @@ public class PlayerController : MonoBehaviour
         moveDirection.y = bounceForce;
         charController.Move(moveDirection * Time.deltaTime);
     }
+
+    public void IncreaseMaxSpeed() => moveSpeed += 5;
 }
