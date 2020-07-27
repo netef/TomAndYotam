@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b018cfc792b3f741a60f3db7d9e3c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 6894341361028151597, guid: 0c24dde545b17f34b89e6691e2c37093, type: 3}
   moveSpeed: 7.5
   jumpForce: 15
   gravityScale: 5

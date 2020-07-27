@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
+    public GameObject bullet;
+
     public float moveSpeed;
     public float jumpForce;
     public float gravityScale = 5f;
@@ -79,6 +81,9 @@ public class PlayerController : MonoBehaviour
 
                 playerModel.transform.rotation = Quaternion.Slerp(playerModel.transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
             }
+
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+                Instantiate(bullet, transform.position + transform.forward + new Vector3(0, 0.5f, 0), transform.rotation);
         }
 
 

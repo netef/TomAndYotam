@@ -10,29 +10,17 @@ public class HealthPickup : MonoBehaviour
     public GameObject pickupEffect;
 
     public int soundToPlay;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             Destroy(gameObject);
 
-            if(isFullHeal)
+            if (isFullHeal)
             {
                 HealthManager.instance.ResetHealth();
-            } else
+            }
+            else
             {
                 HealthManager.instance.AddHealth(healAmount);
             }
