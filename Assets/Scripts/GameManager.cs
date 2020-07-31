@@ -29,8 +29,8 @@ public class GameManager : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-
-        respawnPosition = PlayerController.instance.transform.position;
+        if (!SceneManager.GetActiveScene().name.Equals("ML_Agents_Scene"))
+            respawnPosition = PlayerController.instance.transform.position;
 
         AddCoins(0);
     }
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseUnpause();
         }
@@ -90,14 +90,15 @@ public class GameManager : MonoBehaviour
 
     public void PauseUnpause()
     {
-        if(UIManager.instance.pauseScreen.activeInHierarchy)
+        if (UIManager.instance.pauseScreen.activeInHierarchy)
         {
             UIManager.instance.pauseScreen.SetActive(false);
             Time.timeScale = 1f;
 
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
-        } else
+        }
+        else
         {
             UIManager.instance.pauseScreen.SetActive(true);
             UIManager.instance.CloseOptions();
@@ -125,11 +126,12 @@ public class GameManager : MonoBehaviour
 
         if (PlayerPrefs.HasKey(SceneManager.GetActiveScene().name + "_coins"))
         {
-            if(currentCoins > PlayerPrefs.GetInt(SceneManager.GetActiveScene().name + "_coins"))
+            if (currentCoins > PlayerPrefs.GetInt(SceneManager.GetActiveScene().name + "_coins"))
             {
                 PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + "_coins", currentCoins);
             }
-        } else
+        }
+        else
         {
             PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + "_coins", currentCoins);
         }
