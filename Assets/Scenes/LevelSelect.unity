@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4208909, g: 0.71482235, b: 0.8809126, a: 1}
+  m_IndirectSpecularColor: {r: 0.42097303, g: 0.7147671, b: 0.8810053, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -360,7 +360,7 @@ PrefabInstance:
     - target: {fileID: 3292595747958368845, guid: 03b3708901cfc00448b8ec3314d0d5f9,
         type: 3}
       propertyPath: displayName
-      value: '1-2: The Reverse Road'
+      value: '1-2: The Goblet'
       objectReference: {fileID: 0}
     - target: {fileID: 3292595747958368847, guid: 03b3708901cfc00448b8ec3314d0d5f9,
         type: 3}
@@ -855,7 +855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb079aed390677445b58ec6a607663b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4542057eab68244a95a1ac78811390c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6508,7 +6508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809592769}
   m_LocalRotation: {x: -0, y: -0.27710998, z: -0, w: 0.96083826}
-  m_LocalPosition: {x: -1.01, y: -1.64, z: -3.24}
+  m_LocalPosition: {x: -1.01, y: -1.66, z: -3.24}
   m_LocalScale: {x: 6.815605, y: 0.30207, z: 0.30207}
   m_Children: []
   m_Father: {fileID: 2062060115}
@@ -8028,7 +8028,7 @@ PrefabInstance:
     - target: {fileID: 3292595747958368845, guid: 03b3708901cfc00448b8ec3314d0d5f9,
         type: 3}
       propertyPath: displayName
-      value: '1-1: Adventure Road'
+      value: '1-1: Intro To Software'
       objectReference: {fileID: 0}
     - target: {fileID: 3292595747958368847, guid: 03b3708901cfc00448b8ec3314d0d5f9,
         type: 3}
