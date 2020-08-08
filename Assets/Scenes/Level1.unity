@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4208909, g: 0.71482235, b: 0.8809126, a: 1}
+  m_IndirectSpecularColor: {r: 0.42097303, g: 0.7147671, b: 0.8810053, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1198,6 +1198,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: blockSlopeHalf
       objectReference: {fileID: 0}
+    - target: {fileID: 8052191892560218000, guid: 7f228d626e06f324eb474ae10045ce9a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb2597c04038bac40a481701b43e6534, type: 3}
+    - target: {fileID: 8052191892560218000, guid: 7f228d626e06f324eb474ae10045ce9a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100002, guid: a5db1540fddb4194a8f9a38914364a38, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f228d626e06f324eb474ae10045ce9a, type: 3}
 --- !u!1001 &139806098
@@ -13271,6 +13281,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: blockSlopeHalf (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8052191892560218000, guid: 7f228d626e06f324eb474ae10045ce9a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb2597c04038bac40a481701b43e6534, type: 3}
+    - target: {fileID: 8052191892560218000, guid: 7f228d626e06f324eb474ae10045ce9a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1cc7ebe481975ec44a132c03f9d9c5aa, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f228d626e06f324eb474ae10045ce9a, type: 3}
 --- !u!4 &1337074209 stripped
