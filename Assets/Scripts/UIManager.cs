@@ -17,9 +17,7 @@ public class UIManager : MonoBehaviour
 
     public Text coinText;
 
-    public GameObject pauseScreen, optionsScreen;
-
-    public Slider musicVolSlider, sfxVolSlider;
+    public GameObject pauseScreen;
 
     public string levelSelect, mainMenu;
 
@@ -31,11 +29,11 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(fadeToBlack)
+        if (fadeToBlack)
         {
             blackScreen.color = new Color(blackScreen.color.r, blackScreen.color.g, blackScreen.color.b, Mathf.MoveTowards(blackScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
 
-            if(blackScreen.color.a == 1f)
+            if (blackScreen.color.a == 1f)
             {
                 fadeToBlack = false;
             }
@@ -57,35 +55,10 @@ public class UIManager : MonoBehaviour
         GameManager.instance.PauseUnpause();
     }
 
-    public void OpenOptions()
-    {
-        optionsScreen.SetActive(true);
-    }
-
-    public void CloseOptions()
-    {
-        optionsScreen.SetActive(false);
-    }
-
-    public void LevelSelect()
-    {
-        SceneManager.LoadScene(levelSelect);
-        Time.timeScale = 1f;
-    }
-
     public void MainMenu()
     {
         SceneManager.LoadScene(mainMenu);
         Time.timeScale = 1;
     }
 
-    public void SetMusicLevel()
-    {
-        AudioManager.instance.SetMusicLevel();
-    }
-
-    public void SetSFXLevel()
-    {
-        AudioManager.instance.SetSFXLevel();
-    }
 }

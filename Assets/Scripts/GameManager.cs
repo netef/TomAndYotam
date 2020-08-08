@@ -101,7 +101,6 @@ public class GameManager : MonoBehaviour
         else
         {
             UIManager.instance.pauseScreen.SetActive(true);
-            UIManager.instance.CloseOptions();
             Time.timeScale = 0f;
 
             Cursor.visible = true;
