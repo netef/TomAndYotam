@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
             }
 
             if (Input.GetKeyDown(KeyCode.Mouse0))
-                Instantiate(bullet, transform.position + transform.forward + new Vector3(0, 0.5f, 0), transform.rotation);
+                Instantiate(bullet, transform.position + transform.forward * 2 + new Vector3(0, 0.7f, 0), transform.rotation);
         }
 
 

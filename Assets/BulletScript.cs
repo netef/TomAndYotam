@@ -10,7 +10,7 @@ public class BulletScript : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, 10);
-        GetComponent<Rigidbody>().AddForce(transform.forward * 10000);
+        GetComponent<Rigidbody>().AddForce(transform.forward * 15000);
     }
 
     private void OnTriggerEnter(Collider other)
