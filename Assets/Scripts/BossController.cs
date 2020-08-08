@@ -11,7 +11,7 @@ public class BossController : MonoBehaviour
     public GameObject victoryZone;
     public float waitToShowExit;
 
-    public enum BossPhase { intro, phase1, phase2, phase3, end};
+    public enum BossPhase { intro, phase1, phase2, phase3, end };
     public BossPhase currentPhase = BossPhase.intro;
 
     public int bossMusic, bossDeath, bossDeathShout, bossHit;
@@ -19,12 +19,6 @@ public class BossController : MonoBehaviour
     private void Awake()
     {
         instance = this;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //AudioManager.instance.PlayMusic(bossMusic);
     }
 
     private void OnEnable()
@@ -35,15 +29,13 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.instance.isRespawning)
+        if (GameManager.instance.isRespawning)
         {
             currentPhase = BossPhase.intro;
 
             anim.SetBool("Phase1", false);
             anim.SetBool("Phase2", false);
             anim.SetBool("Phase3", false);
-
-            AudioManager.instance.PlayMusic(AudioManager.instance.levelMusicToPlay);
 
             gameObject.SetActive(false);
 
@@ -93,7 +85,6 @@ public class BossController : MonoBehaviour
     {
         AudioManager.instance.PlaySFX(bossDeath);
         AudioManager.instance.PlaySFX(bossDeathShout);
-        AudioManager.instance.PlayMusic(AudioManager.instance.levelMusicToPlay);
         yield return new WaitForSeconds(waitToShowExit);
         victoryZone.SetActive(true);
     }

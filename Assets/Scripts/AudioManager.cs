@@ -9,9 +9,6 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource[] music;
     public AudioSource[] sfx;
-
-    public int levelMusicToPlay;
-
     public AudioMixerGroup musicMixer, sfxMixer;
 
     //private int currentTrack;
@@ -21,27 +18,9 @@ public class AudioManager : MonoBehaviour
         instance = this;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        PlayMusic(levelMusicToPlay);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        /* if(Input.GetKeyDown(KeyCode.M))
-        {
-            //currentTrack++;
-            //PlayMusic(currentTrack);
-
-            PlaySFX(5);
-        } */
-    }
-
     public void PlayMusic(int musicToPlay)
     {
-        for(int i = 0; i < music.Length; i++)
+        for (int i = 0; i < music.Length; i++)
         {
             music[i].Stop();
         }
